@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+</head>
+<body class="bg-background-dark text-white font-display selection:bg-primary/30 selection:text-white overflow-x-hidden">
+    
+
+    <!-- Nav-bar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 flex justify-center pt-6 px-4">
+        <div class="bg-white/10 backdrop-blur-md border border-white/10 flex items-center justify-between w-full max-w-[900px] px-6 py-3 rounded-xl">
+
+            <a href="#" id="brand" class="flex gap-2 items-center">
+                <span class="material-symbols-outlined text-primary text-2xl font-bold">code</span>
+                <span class="text-lg font-bold tracking-tight font-font1">Portfolio</span>
+            </a>
+            <div class="hidden md:flex items-center gap-8 font-font1 ">
+                <a class="text-sm font-medium text-gray-400 hover:text-white transition-colors" href="#about"  >About</a>
+                <a class="text-sm font-medium text-gray-400 hover:text-white transition-colors"  href="#projects">Projects</a>
+                <a class="text-sm font-medium text-gray-400 hover:text-white transition-colors"  href="#skills">Skills</a>
+                <a class="text-sm font-medium text-gray-400 hover:text-white transition-colors"  href="#contact">Contact</a>
+            </div>
+
+            
+
+            <button class="p-2 md:hidden" onclick="handleMenu()">
+                <span class="material-symbols-outlined text-gray-400">menu</span>
+            </button>
+        </div>
+
+        <div id="nav-dialog" class="fixed bg-background-dark inset-0 pt-6 px-4 hidden md:hidden ">
+            <div id="nav-bar" class="flex justify-between items-center px-6 py-3 bg-white/10 backdrop-blur-md border border-white/10  w-full max-w-[900px]  rounded-xl">
+                <a href="#" id="brand" class="flex gap-2 items-center">
+                <span class="material-symbols-outlined text-primary text-2xl font-bold">code</span>
+                <span class="text-lg font-bold tracking-tight font-font1">Portfolio</span>
+                </a>
+                <button class="p-2 md:hidden" onclick="handleMenu()">
+                <span class="material-symbols-outlined">close</span>
+             </button>
+            </div>
+
+            <div class="mt-6 font-font1">
+                <a class="font-medium m-3 p-3 hover:bg-white/10 block rounded-lg " href="#about" onclick="handleMenu()">About</a>
+                <a class="font-medium m-3 p-3 hover:bg-white/10 block rounded-lg "  href="#projects" onclick="handleMenu()">Projects</a>
+                <a class="font-medium m-3 p-3 hover:bg-white/10 block rounded-lg "  href="#skills" onclick="handleMenu()">Skills</a>
+                <a class="font-medium m-3 p-3 hover:bg-white/10 block rounded-lg "  href="#contact" onclick="handleMenu()">Contact</a>
+            </div>
+            </div>
+             
+
+            
+
+        </div>
+    </nav>
+<!-- main container -->
+    <main >
+<!-- start page -->
+        <section class="relative min-h-[50vh] md:min-h-screen flex flex-col items-center justify-center text-center">
+
+        <div class="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_center,rgba(0,180,255,0.12)_0%,rgba(0,0,0,0)_60%)]"></div>
+
+        <!-- Vignette -->
+        <div class="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_center,rgba(0,0,0,0)_40%,rgba(0,0,0,0.85)_100%)]"></div>
+
+        <!-- text -->
+        <div class="text-primary uppercase text-sm tracking-[0.2em] font-medium font-font1">Tech Enthusiast</div>
+        <h1 class="uppercase font-bold text-6xl md:text-8xl leading-none tracking-tighter mb-4">Archit
+            <br>
+            <span class="text-gray-400">kanchi</span>
+        </h1>
+        <p class="text-lg text-gray-400 max-w-xl mx-auto font-extralight font-font1">A student passionate about web development, exploring ideas and building functional experiences through hands-on projects.</p>
+        
+        
+    </section>
+<!-- about section -->
+
+    <!-- <div class="px-6 py-12 max-w-7xl  mx-auto lg:px-8  bg-black">
+        <div class="flex flex-col items-center">
+            <h2 class="text-3xl font-bold tracking-light p-12">About me</h2>
+            <p class="space-y-6 text-gray-400 leading-relaxed text-lg font-light text-justify max-w-xl mx-auto md:max-lg:">I’m a first year engineering student at UVCE, passionate about web development and learning how modern websites are built. I enjoy working on real projects, experimenting with new tools, and continuously improving my skills as I grow as a developer.</p>
+        </div>
+        
+    </div> -->
+
+    <section id="about" class="  mx-auto py-24 px-6 max-w-[900px]">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-extrabold tracking-tight pb-2">ABOUT <span class="text-primary">ME</span>
+                </h2>
+                <p class="mt-2 text-sm tracking-widest text-white/50 uppercase font-font1">
+                    Allow me to introduce myself
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
+
+            <!-- LEFT: Image -->
+            <div class="relative flex justify-center max-w-sm mx-auto">
+                <!-- annotation -->
+                <div class="absolute -top-8 -left-6 md:-left-10">
+                <div class="inline-flex items-center gap-2">
+                    <span class="text-primary font-handwriting text-lg rotate-[-10deg] font-hand">
+                    That’s me
+                    </span>
+                    <img
+                    src="/arrow.png"
+                    class="w-8 md:w-10 invert rotate-[-10deg]"
+                    alt="arrow"
+                    />
+                </div>
+                </div>
+
+                <!-- image card -->
+                <div class="bg-white p-3 rounded-xl rotate-[-4deg]">
+                <img
+                    src="/me.png"
+                    class="w-40 h-40 md:w-64 md:h-64 rounded-lg object-cover"
+                    alt="Archit Kanchi"
+                />
+                </div>
+            </div>
+
+            <!-- RIGHT: Text -->
+            <div class="text-gray-400 text-xl md:text-[15px] leading-relaxed space-y-1 font-light text-justify font-font1 ">
+                <h3 class="font-semibold ">Hi, I am Archit</h3>
+                    <p >
+                    I’m a first year engineering student at UVCE[Bengeluru], passionate about web
+                    development and learning how modern websites are built.
+                    </p>
+
+                    <p>
+                    I enjoy working on real projects, experimenting with new tools, and
+                    continuously improving my skills through hands-on practice.
+                    </p>
+
+                    <p>
+                    Currently, I’m focused on strengthening my frontend skills and building
+                    projects that help me grow as a developer.
+                    </p>
+                </div>
+
+            </div>
+
+
+    <!-- skills -->
+
+    <section id="skills" class=" py-6 pb-24 md:px-8  mx-auto">
+        <h1 class="text-3xl md:text-4xl font-extrabold tracking-tight uppercase mb-10">Skills</h1>
+
+        <div id="languages" class="grid grid-cols-2 sm:grid-cols-3 w-full h-10  mt-3  md:flex md:flex-wrap gap-4 ">
+            <div class="flex items-center gap-2 px-4 py-2 bg-slate-50 text-black rounded-full text-sm">
+                <i class="fa-brands fa-html5 text-orange-500"></i>
+                <span>HTML</span>
+            </div>
+
+
+            <div class="flex items-center gap-2 px-4 py-2 bg-slate-50 text-black rounded-full text-sm font-font1">
+                <i class="fa-brands fa-css3-alt text-blue-400"></i>
+                <span >CSS</span>
+            </div>
+
+            <div class="flex items-center gap-2 px-4 py-2 bg-slate-50 text-black rounded-full text-sm">
+                <i class="fa-brands fa-html5 text-orange-500"></i>
+                <span>Tailwind</span>
+            </div>
+
+            <div class="flex items-center gap-2 px-4 py-2 bg-slate-50 text-black rounded-full text-sm">
+                <i class="fa-brands fa-react text-blue-400"></i>
+                <span>React</span>
+            </div>
+
+            <div class="flex items-center gap-2 px-4 py-2 bg-slate-50 text-black rounded-full text-sm">
+                <img src="https://simpleicons.org/icons/javascript.svg " class="w-5 h-5 bg-yellow-300" alt="">
+                <span>Javascript</span>
+            </div>
+
+            <div class="flex items-center gap-2 px-4 py-2 bg-slate-50 text-black rounded-full text-sm">
+                <i class="fa-brands fa-github"></i>
+                <span>GitHub</span>
+            </div>
+
+            <div class="flex items-center gap-2 px-4 py-2 bg-slate-50 text-black rounded-full text-sm">
+                
+                <span>C++</span>
+            </div>
+
+            <div class="flex items-center gap-2 px-4 py-2 bg-slate-50 text-black rounded-full text-sm">
+                
+                <span>C programing</span>
+            </div>
+            
+
+
+        </div>
+    </section>
+
+    <!-- Education -->
+    <div class=" mx-auto mt-20 md:px-8 ">
+        <h1 class="uppercase  text-3xl md:text-4xl font-extrabold tracking-tight mb-10">Education</h1>
+
+        <div class="flex justify-start group items-center gap-4 w-full font-font1">
+                <a href="https://uvce.ac.in/" target="_blank">
+                <img src="https://uvce.ac.in/img/UVCE/uvce_vector.png" class="w-16 h-14 border border-gray-400 rounded-xl" alt="">
+                <div class="flex-1" >
+                    <p class="text-gray-400 md:hidden">2025-2029</p>
+                    <div class="flex">
+                        <h2 class=" md:text-xl">University of Visvesvaraya College of Engineering</h2>
+                        
+                        <span class="material-symbols-outlined opacity-0 translate-x-[-4px]transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-1">keyboard_arrow_right</span>
+                    </div>
+                    
+                    <h2 class="text-gray-400">Information Science & Engineering</h2>
+                </a>
+                </div>
+                <p class="text-gray-400 hidden  md:block">2025-2029</p>
+            
+            
+            
+        </div>
+    </div>
+
+    <!-- Project -->
+     <div id="projects" class=" mx-auto mt-20 md:px-8 ">
+        <h1 class="uppercase  text-3xl md:text-4xl font-extrabold tracking-tight mb-10">Projects</h1>
+        <div class="flex flex-col justify-center items-center text-gray-400 font italic text-xl">
+            <p>Work in progress 🚧.</p>
+            <p> will be added soon.</p>
+        </div>
+        
+     </div>
+
+    <!-- contact -->
+     <div id="contact" class="relative mx-auto md:p-20 mt-20 md:px-8 ">
+
+         <div class="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_center,rgba(0,180,255,0.12)_0%,rgba(0,0,0,0)_60%)]"></div>
+
+        <!-- Vignette -->
+        <div class="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_center,rgba(0,0,0,0)_40%,rgba(0,0,0,0.85)_100%)]"></div>
+
+        <div class="w-full  bg-slate-300/10 backdrop-blur-md p-5 md:p-20 flex flex-col justify-center items-center border border-gray-200/10 rounded-3xl ">
+            <h1 class="text-3xl md:text-4xl p-4">Let's build something <br><span class="text-primary"> remarkable. </span> </h1>
+            <p class="text-gray-400 mb-10 ">Feel free to connect with me through any of the following platforms.</p>
+            <div class="flex gap-4">
+                <button class="bg-primary rounded-lg flex items-center p-3">
+                    <span class="material-symbols-outlined">mail</span>
+                    <span>architkanchi07@gmail.com</span>
+                </button>
+                <a href="https://github.com/Archit07421" target="_blank">
+                <img src="https://simpleicons.org/icons/github.svg" class=" w-10 h-10 grayscale invert transition-all duration-300 hover:grayscale-0 hover:invert-0 " alt="">
+                </a>
+
+                <a href="https://www.linkedin.com/in/architkanchi/" target="_blank">
+                <img src="https://www.svgrepo.com/show/204944/linkedin.svg" class=" w-10 h-10 grayscale invert transition-all duration-300 hover:grayscale-0 hover:invert-0 " alt="">
+                </a>
+
+                <a href="https://x.com/Archit_Kanchi" target="_blank">
+                <img src="https://simpleicons.org/icons/x.svg" class=" w-8 h-8 grayscale invert transition-all duration-300 hover:grayscale-0 hover:invert-0 " alt="">
+                </a>
+            </div>
+            
+        </div>
+
+        
+     </div>
+
+
+
+
+
+  </main>
+
+    
+
+</body>
+<footer>
+    <span class="text-gray-400 italic mx-auto flex items-center justify-center pb-10">Built with ❤️  by Archit</span>
+</footer>
+<script src="./script.js"></script>
+</html>

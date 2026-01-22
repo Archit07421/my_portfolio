@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "FontOne";
+  src: url("./font1.woff2") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@layer base{
+    .container {
+        @apply px-6 py-12 max-w-7xl mt-16 mx-auto lg:px-8 lg:mt-20
+    }
+    /* .glass-card {
+        @apply background: rgba(255, 255, 255, 0.03);
+        @apply backdrop-filter: blur(12px);
+        @apply border: 1px solid rgba(255, 255, 255, 0.08);
+        } */
+
+    /* .indie-flower-regular {
+        font-family: "Indie Flower", cursive;
+        font-weight: 400;
+        font-style: normal;
+    } */
+
+    .glass {
+        @apply bg-white/3 backdrop-blur-md border border-white/10;
+    }
+
+    .glow-blue {
+       @apply filter: drop-shadow(0 0 15px rgba(19, 164, 236, 0.4));
+        }
+    .electric-glow {
+       @apply background: radial-gradient(circle, rgba(19, 164, 236, 0.15) 0%, rgba(11, 11, 11, 0) 70%);
+        }
+
+}
